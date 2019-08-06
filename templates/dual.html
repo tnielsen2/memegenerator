@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
     <title>Dual Layer Meme</title>
+    <style></style>
 </head>
 <body>
+
+<br>Select your background </br>
+
+<select name= background method="POST" action="/">
+    {% for background in backgrounds %}
+    <option value= "{{background}}" SELECTED>{{ background }}</option>"
+    {% endfor %}
+</select>
+
+<br>Select your foreground </br>
+
+<select name= foreground method="POST" action="/">
+    {% for foreground in foregrounds %}
+    <option value= "{{foreground}}" SELECTED>{{ foreground }}</option>"
+    {% endfor %}
+</select>
+
+<br>Enter your memetext </br>
+
+<form method="POST">
+    <input name="Memetext">
+    <input type="submit">
+</form>
 
 </body>
 </html>
