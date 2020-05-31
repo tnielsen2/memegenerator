@@ -19,10 +19,16 @@ python3 -m venv venv && . venv/bin/activate
 Set your application environment variable script.
 ```export FLASK_APP=flask_site.py```
 
-Set debu on (if you want to test live without server reloads)
+Set debug on (if you want to test live without server reloads)
 ```export FLASK_DEBUG=1```
 
-Run Flask
+Run Flask locally
 ```buildoutcfg
 flask run
+```
+
+
+Run Flask in docker allowing external access to the device (otherwise only localhost works)
+```buildoutcfg
+docker run -p 5000:5000 tnielsen2/memegenerator flask run --host=0.0.0.0
 ```

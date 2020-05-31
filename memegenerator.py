@@ -3,11 +3,9 @@ import os
 
 app = Flask(__name__)
 
-
-
-@app.route("/")
-def hello():
-    return render_template('home.html')
+@app.route('/')
+def hello_world():
+    return render_template('index.html')
 
 @app.route("/dual")
 def dual():
