@@ -10,7 +10,7 @@
 
 <br>Select your background </br>
 
-<select name= background method="POST" action="/">
+<select id="background" name="background" method="POST" action="/">
     {% for background in backgrounds %}
     <option value= "{{background}}" SELECTED>{{ background }}</option>"
     {% endfor %}
@@ -18,7 +18,7 @@
 
 <br>Select your foreground </br>
 
-<select name= foreground method="POST" action="/">
+<select id="foreground" name="foreground" method="POST" action="/">
     {% for foreground in foregrounds %}
     <option value= "{{foreground}}" SELECTED>{{ foreground }}</option>"
     {% endfor %}
@@ -26,7 +26,7 @@
 
 <br>Enter your memetext </br>
 
-<form method="POST">
+<form id="memetext" method="POST">
     <input name="Memetext">
     <input type="submit">
 </form>

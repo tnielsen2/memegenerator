@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<head>
+    <title>Dual Layer Meme</title>
+    <style></style>
+</head>
+
+<form>
+    <div class="form-group">
+      <div>
+        <select id="duallayer" name='meme' multiple class="form-control">
+            <br>Select your background </br>
+            {% for background in backgrounds %}
+            <option value= "{{background}}" SELECTED>{{ background }}</option>"
+            {% endfor %}
+            <br>Select your foreground </br>
+            {% for foreground in foregrounds %}
+            <option value= "{{foreground}}" SELECTED>{{ foreground }}</option>"
+            {% endfor %}
+            <br> Enter your memetext </br>
+            <form>  </form>
+        </select>
+      </div>
+    </div>
+</form>
+
+
+</body>
+</html>

@@ -1,7 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 from datetime import datetime
 import pathlib
-import os
 
 # Split text into two strings for meme generation
 def split_input(sentence):
